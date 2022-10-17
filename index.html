@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+<!------Jumbotron App Title-------->
+    <div class="jumbotron container-fluid mt-2 text-center p-2 bg-primary text-white">
+        <h1><p class="fw-bold">Weather Dashboard</p></h1>
+    </div>
+
+    <div class="container">
+        <!----Search City----->
+        <div class="row mt-5">
+            <div class="col-sm-4 bg-light">
+                <!--Form Input for Search City-->
+                <h2 class="pt-1"><p class="fw-bold">Search for a City</p></h2>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="search-city" aria-label="City Search" aria-describedby="search-button">
+                    <div class="input-group-append">
+                        <button class="btn bg-primary text-light" id="search-button"><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+                <!--Recent Search history-->
+                <button class="btn btn-primary" type="button" id="clear-history">Clear History</button>
+                    <ul class="recentSearch"></ul>
+            </div>
+            
+            <!------Current City and Temperature container------>
+            <div class="col-sm-8">
+                    <div class="row ml-2 border border-dark rounded">
+                        <div class="col-sm-12" id="current-weather">
+                        </div>
+                    </div>
+                
+
+                <!-----5 day forefacst to be displayed------>
+                <div class="col-sm-12" id="future-weather">
+                    <h3>5-Day Forecast</h3>
+                    <div class="row text-light justify-content-between" id="foreCasts">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
